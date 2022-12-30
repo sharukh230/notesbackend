@@ -91,7 +91,7 @@ app.use(authenticate)
 app.use("/notes",notesRouter)
 
 
-app.listen(process.env.port,async()=>{
+app.listen(`https://wild-teal-dhole-suit.cyclic.app`,async()=>{
     try{
         await connection;
         console.log("Connected to DB successfully")
