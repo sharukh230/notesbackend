@@ -2,7 +2,7 @@ const express = require("express")
 const jwt = require("jsonwebtoken")
 require('dotenv').config()
 const bcrypt = require('bcrypt');
-const cors = require("cors")
+// const cors = require("cors")
 
 
 const {connection} = require("./config/db")
@@ -13,9 +13,9 @@ const app = express()
 
 
 app.use(express.json())  //Middleware
-app.use(cors({
-    origin:"*"
-}))
+// app.use(cors({
+//     origin:"*"
+// }))
 
 
 app.get("/",(req,res)=>{
